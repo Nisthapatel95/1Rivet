@@ -1,0 +1,17 @@
+// Base Files
+@import 'base/index';
+
+// Vendor Files
+ @import 'vendor/bootstrap-base';
+ @import 'vendor/bootstrap-components';
+// @import '../../node_modules/bootstrap-icons/font/bootstrap-icons.scss';
+
+
+// Component Files
+@import 'component/index';
+
+// Layout Filesnav-text
+@import 'layout/index';
+
+// Utilities Files
+@import 'utilities/index';

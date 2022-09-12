@@ -1,0 +1,49 @@
+// Theme Colors
+$primary:#27a097;
+$white:white;
+$success: #0e6cc4;
+$danger: #e43536;
+$warning: #dc9909;
+$info: #8d63d3;
+
+// Body
+// $body-color: black;
+$body-bg: rgb(255, 255, 255);
+
+// Fonts
+$text-muted:white;
+
+// Link color
+$link-color: $white;
+$link-hover-color: $primary;
+
+// Sidebar
+$nav-link-color: grey;
+$nav-link-active-color: $primary;
+$nav-link-active-bg: $primary;
+$nav-link-font-weight: 700;
+
+
+
+// Topbar
+$topbar-bg: WHITE;
+
+
+
+// Table
+$table-header-bg: #eaebeb;
+$table-cell-border-color:#0c0d10;
+$table-heading-color:black;
+
+$theme-colors: (
+  "primary": $primary,
+  "warning": $warning,
+  "success": $success,
+  "danger": $danger,
+  "info": $info
+);
+
+
+// content
+$wrapper-bg:#fafbfd
+

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css"> -->
+</head>
+
+<body>
+    <div class="d-flex flex-grow-1 h-100">
+        <div class="flex-column  primary-aside  d-flex">
+            <!-- Aside -->
+            <aside class=" d-flex flex-column flex-grow-1 ">
+
+                <!-- brand logo -->
+                <figure class="d-flex align-items-center  justify-content-center p-4">
+                    <span class=" fa fa-heart-o primary fs-3"></span>
+                    <div class="p-2">
+                        <span>FITTLE </span>
+
+                    </div>
+
+                </figure>
+                <!-- End: brand logo -->
+
+                <!-- Nav list -->
+                <ul class="nav flex-column  flex-grow-1">
+                    <li class="nav-item ">
+                        <a class="nav-link active d-flex flex-column align-items-center justify-content-between"
+                            href="#">
+                            <div class="fa fa-tachometer"></div>
+                            <div class="nav-text pt-2">Dashboard</div>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link d-flex flex-column align-items-center justify-content-between" href="#">
+                            <div class="fa fa-ticket"></div>
+                            <div class="nav-text pt-2"> Subscription</div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex flex-column align-items-center justify-content-between" href="#">
+                            <div class="fa fa-university"></div>
+                            <div class="nav-text pt-2">My Studio</div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex flex-column align-items-center justify-content-between" href="#">
+                            <div class="fa fa-briefcase"></div>
+                            <div class="nav-text pt-2">Post A job</div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex flex-column align-items-center justify-content-between" href="#">
+                            <div class="fa fa-calendar-minus-o"></div>
+                            <div class="nav-text pt-2">My Events</div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex flex-column align-items-center justify-content-between" href="#">
+                            <div class="fa fa-commenting"></div>
+                            <div class="nav-text pt-2">Notifications</div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex flex-column align-items-center justify-content-between" href="#">
+                            <div class="fa fa-cog"></div>
+                            <div class="nav-text pt-2">Settings</div>
+                        </a>
+                    </li>
+                </ul>
+                <!-- End: Nav list -->
+
+
+            </aside>
+            <!-- End: Aside -->
+        </div>
+        <div class="flex-grow-1  ">
+            <div class="d-flex flex-column   flex-grow-1 p-4">
+                <header class=" d-flex  justify-content-between   ">
+                    <div class="flex-grow-1  ">
+                        <nav class="navbar bg-light  ">
+                            <div class="container-fluid ">
+                                <form class="d-flex " role="search">
+                                    <span class="fa fa-search btn-color"
+                                        style="margin-top: 10px;margin-right:5px; "></span>
+                                    <input class="form-control me-2" style="border: none; background-color: inherit;"
+                                        role="search" placeholder="Search" aria-label="Search">
+
+                                </form>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class=" d-flex justify-content-between align-items-center">
+                        <a class=" ">
+                            <span class=" fa fa-bell-o position-relative btn-color mx-3   fs-5">
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle">
+                                </span>
+                            </span>
+                        </a>
+                        <span class="px-3 space btn-color"> Nistha Patel </span>
+                        <div style="width: 2rem;">
+                            <img src="assets/images/n.png" class="card-img-top" alt="...">
+
+                        </div>
+                    </div>
+                </header>
+            </div>
+            <div class="d-flex flex-column  p-3 h-100 overflow-auto " style="background-color: #fafbfd;">
+
+                <!-- main content  -->
+                <main class="flex-grow-1 d-flex" style="background-color: #fafbfd;">
+                    <!-- left content -->
+                    <div class="flex-grow-1 ">
+                        <div>
+                            <strong>Dashboard</strong>
+                        </div>
+                        <div
+                            style="margin-top: 15px; margin-bottom: 15px; color:gray; font-size: 14px; font-weight: bold;">
+                            Hello,Ryanl! Chek out what's happening today!
+                        </div>
+
+
+                        <div class="col-12  wrapper-bg  p-2 px-2 d-flex   align-items-center  justify-content-between">
+                            <div style=" font-size: 14px; font-weight: bold;">
+                                <span class=" fa fa-info-circle btn-color fs-4"
+                                    style=" font-size: 25px; margin-right: 4px;"></span>
+                                Thanks for joining YPCI go ahead and
+                                <button type="button" class="btn btn-primary rounded-pill primary-aside"
+                                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .6rem; --bs-btn-font-size: .70rem; --bs-btn-font-weight:600; color: #fafbfd;">
+                                    Create Now
+                                </button>
+                            </div>
+                            <div>
+                                <span class=" fa fa-times btn-color"></span>
+                            </div>
+                        </div>
+                        <div class="pt-3">
+                            <div
+                                class="col-12  wrapper-bg p-2 px-2  d-flex   align-items-center  justify-content-between">
+                                <div style=" font-size: 14px; font-weight: bold;">
+                                    <span class=" fa fa-info-circle btn-color fs-4"
+                                        style=" font-size: 25px ; margin-right: 4px;"></span>
+                                    You have 2 unread notifications.
+                                    <!-- <button type="button" class=" btn-color rounded-pill" disabled
+                                            > 
+                                            Check Now
+                                        </button> -->
+                                    <button type="button" class="btn-bkcolor  rounded-pill"
+                                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .6rem; --bs-btn-font-weight:400; color:#10978e ;"
+                                        disabled> Check Now</button>
+                                </div>
+                                <div>
+                                    <span class=" fa fa-times btn-color"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class=" row mt-3">
+                            <div class="col-6 ">
+                                <div class="wrapper-bg p-3  d-flex align-items-center justify-content-between ">
+                                    <strong>
+                                        <h3>New Brisbane Instructors-02</h3>
+                                    </strong>
+                                    <div>
+                                        <span class=" fa fa-eye btn-color"></span>
+                                        View All
+                                        <span class=" fa fa-play btn-color"></span>
+                                    </div>
+                                </div>
+                                <div class="mt-3 table-wrap my-2 overflow-auto">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <div class="d-flex wrapper-bg my-2 justify-content-between ">
+                                                    <div>
+                                                        <div class="p-2 fs-3 "> Thomas Budiman</div>
+                                                        <div class="p-2"> 24 Hours Fitness, | 1050 Brown
+                                                            Street,Brisbane
+                                                        </div>
+                                                        <div class="d-flex p-2"> </div>
+                                                        <button type="button"
+                                                            class="btn btn-primary rounded-pill primary-aside"
+                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .6rem; --bs-btn-font-size: .70rem; --bs-btn-font-weight:600; color: #fafbfd;">
+                                                            Part Time
+                                                        </button>
+                                                        <button type="button" class="btn-bkcolor  rounded-pill"
+                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .6rem; --bs-btn-font-size: .70rem; --bs-btn-font-weight:1200; color:#10978e ;"
+                                                            disabled> Aerial Yoga</button>
+                                                            <button type="button" class="btn-bkcolor  rounded-pill"
+                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .6rem; --bs-btn-font-size: .70rem; --bs-btn-font-weight:1200; color:#10978e ;"
+                                                            disabled> Toga</button>
+                                                    </div>
+                                                    <div class="p-4">
+                                                        <span class=" fa fa-circle-o btn-color"></span>
+                                                        <span>5-Min</span>
+                                                    </div>
+                                                </div>
+                                            </tr>
+                                            <tr>
+                                                <div class="d-flex  my-2 wrapper-bg justify-content-between ">
+                                                    <div>
+                                                        <div class="p-2 fs-3"> Fitness & pilates Instructor</div>
+                                                        <div class="p-2"> 24 Hours Fitness, | 1050 Brown
+                                                            Street,Brisbane
+                                                        </div>
+                                                        <div class="d-flex p-2"> </div>
+                                                        <button type="button" class="btn-bkcolor  rounded-pill"
+                                                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .6rem; --bs-btn-font-size: .70rem; --bs-btn-font-weight:1200; color:#10978e ;"
+                                                        disabled> Part Time</button>
+                                                        <button type="button" class="btn-bkcolor  rounded-pill"
+                                                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .6rem; --bs-btn-font-size: .70rem; --bs-btn-font-weight:1200; color:#10978e ;"
+                                                        disabled> Full Time</button>
+                                                        <button type="button" class="btn-bkcolor  rounded-pill"
+                                                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .6rem; --bs-btn-font-size: .70rem; --bs-btn-font-weight:1200; color:#10978e ;"
+                                                        disabled> Yoga</button>
+                                                    </div>
+                                                    <div class="p-4">
+                                                        <span class=" fa fa-circle-o btn-color"></span>
+                                                        <span>5-Min</span>
+                                                    </div>
+                                                </div>
+                                            </tr>
+                                            <tr>
+                                                <div class="d-flex my-2 wrapper-bg justify-content-between ">
+                                                    <div>
+                                                        <div class="p-2 fs-3"> This is the opportunity for you</div>
+                                                        <div class="p-2"> 24 Hours Fitness, | 1050 Brown
+                                                            Street,Brisbane
+                                                        </div>
+                                                        <div class="d-flex p-2"> </div>
+                                                        <button type="button" class="btn-bkcolor  rounded-pill"
+                                                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .6rem; --bs-btn-font-size: .70rem; --bs-btn-font-weight:1200; color:#10978e ;"
+                                                        disabled> Part Time</button>
+                                                        <button type="button" class="btn-bkcolor  rounded-pill"
+                                                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .6rem; --bs-btn-font-size: .70rem; --bs-btn-font-weight:1200; color:#10978e ;"
+                                                        disabled>  Aerial Yoga</button>
+                                                        <button type="button" class="btn-bkcolor  rounded-pill"
+                                                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .6rem; --bs-btn-font-size: .70rem; --bs-btn-font-weight:1200; color:#10978e ;"
+                                                        disabled> Yoga</button>
+                                                    </div>
+                                                    <div class="p-4">
+                                                        <span class=" fa fa-circle-o btn-color"></span>
+                                                        <span>5-Min</span>
+                                                    </div>
+                                                </div>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+
+                                </div>
+                            </div>
+                            <div class="col-6 ">
+                                <div class="wrapper-bg p-3  d-flex align-items-center justify-content-between ">
+                                    <strong>
+                                        <h3>Most Popular Brisbane Classes+02</h3>
+                                    </strong>
+                                    <div>
+                                        <span class=" fa fa-eye btn-color"></span>
+                                        View All
+                                        <span class=" fa fa-play btn-color"></span>
+                                    </div>
+                                </div>
+                                <div class="mt-3 table-wrap  my-2 overflow-auto ">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <div class="d-flex wrapper-bg my-2 justify-content-between ">
+                                                    <div>
+                                                        <div class="p-2 fs-3"> Yoga Master Class</div>
+                                                        <div class="p-2"> 24 Hours Fitness, | 1050 Brown
+                                                            Street,Brisbane
+                                                        </div>
+                                                        <div class="d-flex p-2"> </div>
+
+                                                    </div>
+                                                    <div class="p-4">
+                                                        <span class=" fa fa-circle-o btn-color"></span>
+                                                        <span>5-Min</span>
+                                                    </div>
+                                                </div>
+                                            </tr>
+                                            <tr>
+                                                <div class="d-flex  my-2 wrapper-bg justify-content-between ">
+                                                    <div>
+                                                        <div class="p-2 fs-2"> Crossfit Professional Meetup</div>
+                                                        <div class="p-2"> 24 Hours Fitness, | 1050 Brown
+                                                            Street,Brisbane
+                                                        </div>
+                                                        <div class="d-flex p-2"> </div>
+
+                                                    </div>
+                                                    <div class="p-4">
+                                                        <span class=" fa fa-circle-o btn-color"></span>
+                                                        <span>5-Min</span>
+                                                    </div>
+                                                </div>
+                                            </tr>
+                                            <tr>
+                                                <div class="d-flex wrapper-bg my-2 justify-content-between ">
+                                                    <div>
+                                                        <div class="p-2 fs-3">Pilates, yoga and Barre Instructors
+                                                        </div>
+                                                        <div class="p-2"> 24 Hours Fitness, | 1050 Brown
+                                                            Street,Brisbane
+                                                        </div>
+                                                        <div class="d-flex p-2"> </div>
+
+
+
+                                                    </div>
+                                                    <div class="p-4">
+                                                        <span class=" fa fa-circle-o btn-color"></span>
+                                                        <span>5-Min</span>
+                                                    </div>
+                                                </div>
+                                            </tr>
+                                            <tr>
+                                                <div class="d-flex wrapper-bg my-2 justify-content-between ">
+                                                    <div>
+                                                        <div class="p-2 fs-3">Pilates, yoga and Barre Instructors
+                                                        </div>
+                                                        <div class="p-2"> 24 Hours Fitness, | 1050 Brown
+                                                            Street,Brisbane
+                                                        </div>
+                                                        <div class="d-flex p-2"> </div>
+
+
+
+                                                    </div>
+                                                    <div class="p-4">
+                                                        <span class=" fa fa-circle-o btn-color"></span>
+                                                        <span>5-Min</span>
+                                                    </div>
+                                                </div>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </main>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

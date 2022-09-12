@@ -1,0 +1,31 @@
+// Global styles goes here
+html,
+body {
+    font-family:  'sans-serif';
+    height  : 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.d-grid {
+    display: grid;
+}
+
+.overflow-vertical {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.wrapper-bg{
+    background-color: white;
+}
+.btn-color{
+    color: lightgrey;
+}
+.btn-bkcolor{
+    background-color:#d7f5ee;
+    font-weight: 600;
+    font-size:12px;
+}
+.color{
+    color: black;
+}

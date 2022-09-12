@@ -1,0 +1,15 @@
+{
+  "name": "dashboard-demo",
+  "version": "1.0.0",
+  "description": "// Overview\r 1) What is Bootstrap?\r 2) Why do we use Bootstrap?\r 3) Bootstrap official website overview\r 4) How to use Bootstrap in our Application (using via link tag in head tag & installing it using npm)\r 5) Folder Structure of Bootstrap files for using it with SCSS \r 6) Analysing the mockup \r 7) Bootstrap Icons\r 8) Live code using Bootstrap classes & theming!\r 9) Changing Bootstrap Scss variables (font-family, font-size, body-color & bg etc)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sass assets/scss/style.scss  assets/css/style.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.0"
+  }
+}
