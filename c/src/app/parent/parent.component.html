@@ -1,8 +1,0 @@
-<h1 class="custom"> parent works </h1>
-<div>
-    <app-child [childList]="currentItem" (parentList)="addItem($event)"></app-child>
-</div>
-<ul>
-    <li *ngFor="let item of childtoparent">{{item}}</li>
-</ul>
-

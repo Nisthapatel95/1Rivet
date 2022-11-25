@@ -1,0 +1,13 @@
+<div class="card  p-3 " style="width: 18rem;">
+    <div class="image-wrapper rounded overflow-hidden d-flex align-items-center justify-content-center"
+        *ngFor="let data of cardData.image">
+        <img src="{{data.img1}}" class=" h-100 w-100" alt="no-image-found">
+    </div>
+    <div class="card-body p-0">
+        <h5 class="mt-2 mb-1">{{cardData.name}}</h5>
+        <p class=" mb-2 text-truncate">{{cardData.description}}</p>
+        <!-- <p class="text-truncate">{{cardData.artistType}}</p> -->
+        <a href="#" class="btn btn-outline-secondary w-100 text-center " disabled="true">Details</a>
+    </div>
+
+</div>
