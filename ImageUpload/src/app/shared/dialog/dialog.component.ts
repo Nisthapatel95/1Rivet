@@ -9,10 +9,8 @@ import { CdkOverlayService } from '../services/cdk/cdk-overlay.service';
 export class DialogComponent implements OnInit {
   public imagedata: any
   @Input() name!: string;
-
   @Output() public confirm: EventEmitter<boolean>;
-
-  @Output() public cancle: EventEmitter<boolean>;
+   @Output() public cancle: EventEmitter<boolean>;
 
   constructor(private cdkOverlayService: CdkOverlayService,) {
 
@@ -29,14 +27,12 @@ export class DialogComponent implements OnInit {
   }
 
   public confirmData(): void {
-    this.confirm.emit(true);
-    
-    
-
-  }
+  this.cdkOverlayService.delectImage.next(true)
+  this.cdkOverlayService.overlayRef.detach()
+}
 
   public cancleData(): void {
-    this.cancle.emit(true);
-
+this.cdkOverlayService.delectImage.next(false)
+this.cdkOverlayService.overlayRef.detach()
   }
 }

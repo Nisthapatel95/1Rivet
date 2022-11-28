@@ -1,13 +1,22 @@
-
-<div class="custom-dropzone" ngx-dropzone [accept]="'image/*'" (change)="onSelect($event)">
-    <ngx-dropzone-label>Drag and Drop Here!
-       <div><span class="bi bi-cloud-arrow-up-fill"></span></div> 
+<div class="custom-dropzone" ngx-dropzone accept="image/jpeg,image/jpg,image/png,image/gif" (change)="onSelect($event)">
+    <ngx-dropzone-label>Upload Images or Just Drag And Drop <br>
+        +Add 5 Images
     </ngx-dropzone-label>
-
+</div>
 <!-- </ngx-dropzone> -->
+
+<div>
+    <ngx-dropzone-image-preview *ngIf="selectedImage" ngProjectAs="ngx-dropzone-preview" [file]="selectedImage"
+        [removable]="true" (removed)="onRemove(selectedImage)">
+    </ngx-dropzone-image-preview>
 </div>
 <div ngx-dropzone style="border: 0px !important;">
-    <ngx-dropzone-image-preview ngProjectAs="ngx-dropzone-preview" *ngFor="let f of files" [file]="f" [removable]="true"
-        (removed)="onRemove(f)" >
+        <ngx-dropzone-image-preview style="position: relative;" ngProjectAs="ngx-dropzone-preview" *ngFor="let f of files  let i=index" 
+        [file]="f" [removable]="true" (removed)="onRemove(i)">
     </ngx-dropzone-image-preview>
+
+    <ngx-dropzone-label>
+        <img class="fav" (click)="setFavImage(setFavImage)" src="../../assets/Vector.png">
+        <span class="icon-Close fav icon"></span>
+    </ngx-dropzone-label>
 </div>

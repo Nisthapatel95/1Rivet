@@ -1,19 +1,19 @@
 import { Overlay, OverlayConfig, OverlayRef } from '@angular/cdk/overlay';
 import { ComponentPortal } from '@angular/cdk/portal';
 import { Injectable } from '@angular/core';
-import { Subject } from 'rxjs';
+import { Observable, Subject } from 'rxjs';
 
 
 @Injectable()
 export class CdkOverlayService {
   public overlayRef!: OverlayRef;
   overlayTemplate: any;
-
   public delectImage: Subject<any>;
+
   constructor(private overlay: Overlay) {
 
     this.delectImage = new Subject();
-   }
+  }
 
 
   openDialog(component: any) {
