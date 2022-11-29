@@ -11,12 +11,13 @@
     </ngx-dropzone-image-preview>
 </div>
 <div ngx-dropzone style="border: 0px !important;">
-        <ngx-dropzone-image-preview style="position: relative;" ngProjectAs="ngx-dropzone-preview" *ngFor="let f of files  let i=index" 
-        [file]="f" [removable]="true" (removed)="onRemove(i)">
+    <ngx-dropzone-image-preview style="position: relative;" ngProjectAs="ngx-dropzone-preview"
+        *ngFor="let f of files  let i=index" [file]="f" [removable]="true" (removed)="onRemove(i)">
     </ngx-dropzone-image-preview>
 
     <ngx-dropzone-label>
         <img class="fav" (click)="setFavImage(setFavImage)" src="../../assets/Vector.png">
         <span class="icon-Close fav icon"></span>
     </ngx-dropzone-label>
+
 </div>

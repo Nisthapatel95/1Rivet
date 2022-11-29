@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { Overlay } from 'ngx-toastr';
 import { Image } from '../image.model';
 import { DialogComponent } from '../shared/dialog/dialog.component';
@@ -11,8 +11,9 @@ import { NotificationService } from './notification.service';
   styleUrls: ['./image-upload.component.scss']
 })
 export class ImageUploadComponent implements OnInit {
-  public data: any
-  public imageList: Image[]
+  public data: boolean = false;
+  public imageList: Image[];
+  public removeIndex!: number;
   selectedImage: any;
   files: File[] = [];
   public total_images: number = 0;
@@ -23,6 +24,21 @@ export class ImageUploadComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.postdata()
+    this.cdkOverlayService.delectImage$.subscribe((Res: any) => {
+      this.data = Res
+      if (Res) {
+       
+        this.files.splice(this.removeIndex, 1);
+        console.log(this.files);
+
+      }
+      else if (this.data === false) {
+        this.total_images = this.total_images
+        console.log(this.total_images);
+
+      }
+    })
   }
 
 
@@ -36,7 +52,7 @@ export class ImageUploadComponent implements OnInit {
     if (this.files.length > 5 || this.total_images > 5) {
       this.notifyService.showError("You Can Only Select Upto 5 Images !");
       this.total_images = this.files.length;
-     }
+    }
     else {
 
       this.files.push(...event.addedFiles);
@@ -51,24 +67,23 @@ export class ImageUploadComponent implements OnInit {
   }
 
   onRemove(event: any) {
+    debugger
     console.log(event);
-    console.log(this.total_images);
+    this.removeIndex = event;
+
     this.cdkOverlayService.openDialog(DialogComponent);
-    this.cdkOverlayService.delectImage.subscribe(Res => {
-    this.data = Res
-      if (this.data === true) {
-        console.log(this.files);
-        
-        this.files.splice(event, 1);
-        }
-      else if (this.data === false) {
-        this.total_images = this.total_images
-      }
-    })
+
   }
+
   setFavImage(selectedImage: any) {
     console.log(selectedImage);
 
     this.selectedImage = selectedImage
+  }
+  postdata(){
+    // this.cdkOverlayService.postStudioData().subscribe(res =>{
+    //   console.log(res);
+      
+    // })
   }
 }
